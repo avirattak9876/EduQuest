@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div class="container mt-4">
+        <h1 class="text-secondary">SplideJS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates laborum maiores?</p>
+        <div class="splide bg-secondary">
+            <div class="splide__slider">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide"><img src="images/avatar1.jpg" alt="aneirin"></div>>
+                        <div class="splide__slide"><img src="images/avatar2.jpg" alt="dristi"></div>>
+                        <div class="splide__slide"><img src="images/avatar3.jpg" alt="charmaine"></div>>
+                        <div class="splide__slide"><img src="images/avatar4.jpg" alt="em"></div>>
+                        <div class="splide__slide"><img src="images/avatar5.jpg" alt="gill"></div>>
+                        <div class="splide__slide"><img src="images/avatar6.jpg" alt="laverne"></div>>
+                        <div class="splide__slide"><img src="images/avatar7.jpg" alt="mindigo"></div>>
+                        <div class="splide__slide"><img src="images/course1.jpg" alt="nalda"></div>>
+                        <div class="splide__slide"><img src="images/course11.jpg" alt="narf"></div>>
+                        <div class="splide__slide"><img src="images/course16.jpg" alt="portman"></div>>
+                 <div class="splide__slide"><img src="images/course18.jpg" alt="seymour"></div>>
+                        <div class="splide__slide"><img src="images/course2.jpg" alt="tomolor"></div>>
+                        <div class="splide__slide"><img src="images/course17.jpg" alt="trisaphron"></div>>
+                        <div class="splide__slide"><img src="images/avatar1.jpg" alt="two"></div>>
+                        <div class="splide__slide"><img src="images/avatar4.jpg" alt="violette"></div>>
+                        <div class="splide__slide"><img src="images/av.svg" alt="ichabod"></div>>
+                        </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
+
+
+    <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    perPage: 3,
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount( window.splide.Extensions );
+});
+      </script>
+</body>
+</html>

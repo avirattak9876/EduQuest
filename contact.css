@@ -1,0 +1,555 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none!important;
+  list-style: none;
+  box-sizing: border-box; 
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+header{
+	
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color:  #4894ad;
+	z-index: 1000;
+	padding: 10px 50px;
+  border-bottom: 4px solid orange;
+	
+	
+}
+
+.log{
+	width: 100px;
+	
+}
+
+.logo{
+   
+    width: 100%;
+}
+
+header nav ul{
+	display: flex;
+}
+
+header nav ul li a{
+	display: inline-block;
+	color: white;
+	padding: 5px 0;
+	margin: 0 10px;
+     font-weight: 500;
+	 font-size: 1.3rem;
+}
+
+.hamburger{
+	cursor: pointer;
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	margin: 5px 0;
+	background-color: black;
+}
+
+
+
+.searching{
+    
+    
+    
+	display: flex;
+	justify-content: center;
+  gap: 20%;
+	border: 2px solid black;
+	border-radius: 20px;
+    
+}
+
+.search{
+    outline: none;
+	border: none;
+	background: transparent;
+   color: #fff;
+   padding: 2%;
+}
+
+::placeholder{
+    color: #fff;
+    
+}
+
+.sear{
+    width: 25px;
+    
+}
+
+
+
+
+.avi:hover{
+	
+	border-bottom: 2px solid orange;
+	border-radius: 10%;
+	transition: .5s;
+	cursor: pointer;
+
+	
+	
+}
+
+.avi a:hover{
+	color: orange;
+}
+
+
+
+
+/* menu section */
+
+
+@media only screen and (max-width: 930px) {
+	header{
+
+		padding: 5px 30px;
+	}
+
+    
+	.searching{
+		display: none;
+	}
+  
+
+
+
+	header nav ul li {
+		font-size: 2rem;
+	}
+
+
+}
+
+@media only screen and (max-width: 800px){
+	.hamburger{
+		display: block;
+	}
+
+
+	header{
+		padding: 3rem;
+	}
+
+	header nav{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: -100%;
+		top: 120px;
+		width: 100%;
+		background-color: lavender;
+		padding: 30px;
+    z-index: 100;
+		
+	}
+
+	header #nav_check:checked ~ nav{
+          left: 0;
+		  
+	}
+
+    .navbar{
+		display: flex;
+		flex-direction: column;
+	}
+
+	header nav ul li a{
+		margin: 20px 0;
+		color: #162938;
+		font-size: 2rem;
+	}
+
+
+
+
+}
+
+
+
+
+  /* niche wala part */
+  
+
+
+  .contact_container{
+    background-color:  #4894ad;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 2rem;
+    margin-top: 15%;
+  }
+
+  .contact_aside{
+    background-color: orange;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+  }
+
+  .aside_image{
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .mum{
+    width: 14rem;
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  .raj{
+    color: white;
+    text-align: center;
+  }
+
+   .contact-details{
+    margin-top: 4rem;
+   }
+
+
+  .contact-details li{
+    
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-socials{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+  }
+
+  .contact-socials a{
+    background-color: darkviolet;
+    padding: 1rem;
+    border-radius: 60%;
+    font-size: 1.5rem;
+  }
+
+
+  .contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+  }
+
+  .form-name{
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  input[type="text"]{
+    width: 50%;
+  }
+
+  .vini,textarea{
+    width: 100%;
+    padding: 1rem;
+    background-color: #e8c0b3;
+    color: black;
+    border: none;
+  }
+
+  .btn-primary{
+    width: 10rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    
+  }
+
+
+
+
+
+
+ /* footer */
+
+ footer {
+	color: white;
+	background: #2c2b2b;
+	padding: 30px 0; 
+	margin-top: 30%;
+	background: url(photos/avirat3.jpeg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+
+}
+
+
+
+footer .footer-container {
+	width: 100%;
+	margin: auto;
+	margin-top: 4%;
+	display: flex;
+	
+	
+}
+footer .social-media img{
+	width: 26px;
+}
+
+.footer-container p img{
+	width: 20px;
+}
+
+.left-col{
+  margin-left: 8%;
+}
+
+.right-col{
+	margin-left: 20%;
+	
+}
+
+.rights-text{
+	font-size: 1.3rem;
+}
+
+footer .social-media a{
+	
+	padding-right: 7%;
+	
+	
+}
+footer .right-col h1{
+	font-size: 26px;
+}
+footer .border{
+	width: 100px;
+	height: 4px;
+	background: orange;
+	margin: 2px;
+}
+footer .newsletter-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer input::placeholder {
+  color: black !important;
+}
+footer .txtb {
+	flex: 1;
+	padding: 3%;
+	font-size: 16px;
+	background: white;
+	border: none;
+	
+	outline: none;
+	border-radius: 5px;
+	width: 280px;
+	margin-top: 20px;
+	color: black;
+	border-radius: 1rem;
+}
+footer .btn {
+	margin-top: 20px;
+	padding: 3%;
+	font-size: 16px;
+	color: black;
+	background: orange;
+	border: none;
+	
+	outline: none;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;	
+	border-radius: 1rem;
+}
+
+
+
+
+
+
+ 
+
+  @media screen and (max-width: 930px) {
+
+
+  
+    .h-container{
+    display: flex;
+    flex-wrap: wrap;
+    }
+  
+    .pp{
+    font-size: 3rem;
+    }
+  
+    .oo{
+    
+    font-size: 2rem;
+    }
+  
+    .fuk{
+    margin-left: 40%;
+    }
+  
+  
+    .contact_container{
+      gap: 1rem;
+      margin-top: 2.5rem;
+      height: auto;
+      padding: 1rem;
+    }
+  
+   .contact_aside{
+    width: auto;
+    padding: 1rem;
+    bottom: 0;
+   }
+  
+  .contact_form{
+    align-self: center;
+    margin-right: 1.5rem;
+   
+  }
+  
+  .contact-socials{
+    gap: 0.8rem;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+  }
+
+  .contact-socials a{
+    font-size: 1rem;
+  }
+
+ 
+   
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 550px){
+  
+  
+  .contact_container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    
+    padding: 0;
+
+  }
+
+  .contact_aside{
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .contact_form{
+    margin: 0 1.5rem 3rem;
+  }
+
+  
+  
+	footer .footer-container {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	
+	
+	
+	.left-col{
+		margin-left: 9%;
+	
+	}
+	
+	
+	.right-col{
+		margin-bottom: 7%;
+		margin-left: 5%;
+		margin-top: 3%;
+
+	}
+	
+	.social-media{
+		padding-right: 1rem;
+	}
+	
+	
+	.rights-text{
+		font-size: 1rem;
+		
+	}
+	
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
